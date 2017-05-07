@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke
+        android:width="10dp"
+        android:dashGap="@dimen/margin"
+        android:color="@color/backgroundSoft" />
+    <size
+        android:width="250dp"
+        android:height="250dp"/>
+    <gradient
+        android:startColor="@color/backgroundSoft"
+        android:centerColor="@color/colorPrimary"
+        android:endColor="@color/colorAccent"
+        />
+</shape>

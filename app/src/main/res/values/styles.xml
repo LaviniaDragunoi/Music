@@ -1,0 +1,122 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="AppTheme">
+        <item name="android:textColor">@color/backgroundSoft</item>
+    </style>
+
+    <style name="CoordinatorStyle" parent="MatchStyle">
+        <item name="android:background">@color/backgroundSoft</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="ScrollViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:background">@color/backgroundSoft</item>
+    </style>
+
+    <style name="MatchStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrapStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextLightColor" parent="TextStyle">
+        <item name="android:textColor">@color/backgroundSoft</item>
+
+    </style>
+
+    <style name="TextDarkColor" parent="TextStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_margin">@dimen/text_margin</item>
+    </style>
+
+    <style name="TextDarkTitle" parent="TextDarkColor">
+        <item name="android:layout_margin">@dimen/card_view_margin</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+    </style>
+
+    <style name="CardViewMainStyle">
+        <item name="android:layout_width">@dimen/zero_dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/card_view_margin</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="android:clickable">true</item>
+        <item name="cardBackgroundColor">@color/CardBackgroundTransparentColor</item>
+
+    </style>
+
+    <style name="CardViewStyle" parent="CardViewMainStyle">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="CollapsingToolbarStyle" parent="MatchWrapStyle">
+        <item name="layout_scrollFlags">scroll</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="FloatingToolbarStyle" parent="WrapStyle">
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="fabSize">mini</item>
+    </style>
+
+    <style name="TextExplanations" parent="TextDarkColor">
+        <item name="android:padding">@dimen/margin</item>
+    </style>
+
+    <style name="SearchButtonStyle" parent="WrapStyle">
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:src">@drawable/search</item>
+        <item name="fabSize">auto</item>
+    </style>
+
+    <style name="EditTextStyle" parent="MatchWrapStyle">
+        <item name="android:layout_toEndOf">@id/search</item>
+        <item name="android:layout_margin">@dimen/card_view_margin</item>
+        <item name="android:inputType">textAutoComplete</item>
+    </style>
+
+    <style name="CardViewText" parent="TextDarkTitle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:drawableTop">@drawable/singer</item>
+        <item name="android:drawablePadding">@dimen/text_margin</item>
+    </style>
+
+    <style name="TimerStyle" parent="TextDarkColor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/margin</item>
+        <item name="android:textSize">@dimen/timer_text</item>
+
+    </style>
+
+</resources>

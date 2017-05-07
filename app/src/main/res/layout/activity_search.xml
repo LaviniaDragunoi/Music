@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollViewStyle"
+    tools:context="com.example.laurentiudragunoi.music.SearchActivity">
+
+    <LinearLayout
+        style="@style/MatchWrapStyle"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/now_playing"
+            style="@style/CardViewStyle">
+
+            <RelativeLayout style="@style/WrapStyle">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/search"
+                    style="@style/SearchButtonStyle"
+                    android:layout_marginStart="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    app:layout_anchor="@id/song_bar"
+                    app:layout_anchorGravity="bottom|right|end" />
+
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:text="@string/search_text" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            style="@style/TextExplanations"
+            android:text="@string/search_page_explanation" />
+    </LinearLayout>
+</ScrollView>

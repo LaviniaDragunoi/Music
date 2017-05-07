@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CoordinatorStyle"
+    tools:context="com.example.laurentiudragunoi.music.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/song_bar"
+        style="@style/MatchWrapStyle">
+
+        <android.support.design.widget.CollapsingToolbarLayout style="@style/CollapsingToolbarStyle">
+
+            <LinearLayout
+                style="@style/MatchWrapStyle"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextLightColor"
+                    android:layout_gravity="center"
+                    android:text="@string/song_name" />
+
+                <TextView
+                    style="@style/TextLightColor"
+                    android:layout_gravity="center"
+                    android:text="@string/artist_name" />
+
+                <LinearLayout
+                    style="@style/WrapStyle"
+                    android:layout_gravity="center_horizontal">
+
+                    <android.support.design.widget.FloatingActionButton
+                        style="@style/FloatingToolbarStyle"
+                        android:src="@drawable/previous" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        style="@style/FloatingToolbarStyle"
+                        android:src="@drawable/play" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        style="@style/FloatingToolbarStyle"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MatchStyle"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            style="@style/MatchStyle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/map"
+                style="@style/MatchWrapStyle"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/MatchWrapStyle"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/artist_card"
+                        style="@style/CardViewMainStyle"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/CardViewText"
+                            android:text="@string/singer_name" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        style="@style/CardViewMainStyle"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/CardViewText"
+                            android:text="@string/singer_name" />
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextExplanations"
+                android:text="@string/artists_page_explanation" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/SearchButtonStyle"
+        app:layout_anchor="@id/song_bar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <!--Names-->
+    <string name="app_name">Music</string>
+    <string name="song_name">Song Name</string>
+    <string name="now_play_name">Now playing</string>
+    <string name="artists_name">Artists</string>
+    <string name="artist_name">Artist</string>
+    <string name="search_name">Search</string>
+    <string name="playlist_name">Playlist</string>
+    <string name="library_name">Library</string>
+    <string name="singer_name">Name</string>
+    <string name="home_name">Home</string>
+    <!--Explanations-->
+    <string name="library_explination">Find all your music.</string>
+    <string name="artists_explanation">Playlist for each artist.</string>
+    <string name="now_playing_explanation">Playlist and the song details.</string>
+    <string name="playlist_explanation">Browse users playlists.</string>
+    <string name="home_page_explanation">This is the home page and has the map of the Music app. Each CardView has the path to the named Activity. Search button has the path for Search Activity. Above each Activity page has a collapsing Toolbar with the current song played.</string>
+    <string name="artists_page_explanation">This is the Artists page and has all songs from the library sorted by the artist name. On clicking on the Artist CardView will open the Artist page that contains all artist songs.</string>
+    <string name="library_page_explanation">This is the app music library. Has the search button to redirect to the SearchActivity.</string>
+    <string name="artist_page_explanation">Here you can find the discography of a chosen singer. Has the search button to redirect to the SearchActivity.</string>
+    <string name="now_playing_page_explanation">You can find the current song played and a timer for it. To the bottom of the page is the current playlist.</string>
+    <string name="playlist_page_explanation">Here you can find all your playlists and each playlist can be expanded to see its content.</string>
+    <string name="search_page_explanation">This is the Search Page and here are redirected all searching activity.</string>
+
+    <string name="timer">00:00</string>
+    <string name="search_text">Search Song or Artist</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CoordinatorStyle"
+    tools:context="com.example.laurentiudragunoi.music.MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/ScrollViewStyle"
+        tools:context="com.example.laurentiudragunoi.music.NowPlayingActivity">
+
+        <LinearLayout
+            style="@style/MatchWrapStyle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/song_bar"
+                style="@style/MatchWrapStyle"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    style="@style/TextLightColor"
+                    android:layout_gravity="center"
+                    android:text="@string/song_name" />
+
+                <TextView
+                    style="@style/TextLightColor"
+                    android:layout_gravity="center"
+                    android:text="@string/artist_name" />
+
+                <LinearLayout
+                    style="@style/WrapStyle"
+                    android:layout_gravity="center_horizontal">
+
+                    <android.support.design.widget.FloatingActionButton
+                        style="@style/FloatingToolbarStyle"
+                        android:src="@drawable/previous" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        style="@style/FloatingToolbarStyle"
+                        android:src="@drawable/play" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        style="@style/FloatingToolbarStyle"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TimerStyle"
+                    android:text="@string/timer" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextExplanations"
+                android:text="@string/now_playing_page_explanation" />
+
+            <ListView
+                android:id="@+id/library_list"
+                style="@style/MatchWrapStyle" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/SearchButtonStyle"
+        app:layout_anchor="@id/song_bar"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>
+
