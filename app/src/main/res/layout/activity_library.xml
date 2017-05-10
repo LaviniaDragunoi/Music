@@ -41,9 +41,13 @@
                     <android.support.design.widget.FloatingActionButton
                         style="@style/FloatingToolbarStyle"
                         android:src="@drawable/next" />
+
                 </LinearLayout>
+
             </LinearLayout>
+
         </android.support.design.widget.CollapsingToolbarLayout>
+
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
@@ -61,10 +65,13 @@
             <ListView
                 android:id="@+id/library_list"
                 style="@style/MatchWrapStyle" />
+
         </LinearLayout>
+
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
         style="@style/SearchButtonStyle"
         app:layout_anchor="@id/song_bar"
         app:layout_anchorGravity="bottom|right|end" />

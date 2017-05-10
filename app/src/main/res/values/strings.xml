@@ -11,13 +11,13 @@
     <string name="singer_name">Name</string>
     <string name="home_name">Home</string>
     <!--Explanations-->
+    <string name="home_page_explanation">Music is an app that will use MediaPlayer. This is the home page and has the map of the Music app. Each CardView has the path to the named Activity. Search button has the path for Search Activity. Above each Activity page has a collapsing Toolbar with the current song played.</string>
     <string name="library_explination">Find all your music.</string>
     <string name="artists_explanation">Playlist for each artist.</string>
     <string name="now_playing_explanation">Playlist and the song details.</string>
     <string name="playlist_explanation">Browse users playlists.</string>
-    <string name="home_page_explanation">This is the home page and has the map of the Music app. Each CardView has the path to the named Activity. Search button has the path for Search Activity. Above each Activity page has a collapsing Toolbar with the current song played.</string>
-    <string name="artists_page_explanation">This is the Artists page and has all songs from the library sorted by the artist name. On clicking on the Artist CardView will open the Artist page that contains all artist songs.</string>
-    <string name="library_page_explanation">This is the app music library. Has the search button to redirect to the SearchActivity.</string>
+    <string name="artists_page_explanation">This is the Artists page and has all songs from the library sorted by the artist name. On clicking on the Artist CardView will open the Artist page that contains all artist songs. It should be implemented a RecyclerView to manage all list of the artist. Has the search button to redirect to the SearchActivity. Has an menu actionBar on top that allows to move from one activity to another. It will be managed to be displayed from a recyclerView and ArrayAdapter. </string>
+    <string name="library_page_explanation">This is the app music library.Is the page where you can find all songs available for this Music App. The listView should be displayed on the screen by using ListView and ArrayAdapter, and will display the name of the artist and song. Has the search button to redirect to the SearchActivity. Has an menu actionBar on top that allows to move from one activity to another.</string>
     <string name="artist_page_explanation">Here you can find the discography of a chosen singer. Has the search button to redirect to the SearchActivity.</string>
     <string name="now_playing_page_explanation">You can find the current song played and a timer for it. To the bottom of the page is the current playlist.</string>
     <string name="playlist_page_explanation">Here you can find all your playlists and each playlist can be expanded to see its content.</string>

@@ -19,9 +19,7 @@
                     android:id="@+id/search"
                     style="@style/SearchButtonStyle"
                     android:layout_marginStart="@dimen/margin"
-                    android:layout_marginTop="@dimen/margin"
-                    app:layout_anchor="@id/song_bar"
-                    app:layout_anchorGravity="bottom|right|end" />
+                    android:layout_marginTop="@dimen/margin" />
 
                 <EditText
                     style="@style/EditTextStyle"

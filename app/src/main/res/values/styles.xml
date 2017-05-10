@@ -4,12 +4,12 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="MyTheme" parent="AppTheme">
-        <item name="android:textColor">@color/backgroundSoft</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="CoordinatorStyle" parent="MatchStyle">
@@ -17,9 +17,7 @@
         <item name="android:fitsSystemWindows">true</item>
     </style>
 
-    <style name="ScrollViewStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+    <style name="ScrollViewStyle" parent="MatchStyle">
         <item name="android:fillViewport">true</item>
         <item name="android:background">@color/backgroundSoft</item>
     </style>
@@ -39,10 +37,8 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="TextStyle">
+    <style name="TextStyle" parent="WrapStyle">
         <item name="android:textSize">@dimen/text_size</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="TextLightColor" parent="TextStyle">
@@ -51,7 +47,7 @@
     </style>
 
     <style name="TextDarkColor" parent="TextStyle">
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:layout_margin">@dimen/text_margin</item>
     </style>
 
@@ -108,7 +104,8 @@
         <item name="android:drawablePadding">@dimen/text_margin</item>
     </style>
 
-    <style name="TimerStyle" parent="TextDarkColor">
+    <style name="TimerStyle" parent="TextStyle">
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/shape</item>

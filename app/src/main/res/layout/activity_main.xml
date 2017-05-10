@@ -145,6 +145,7 @@
                                 style="@style/TextDarkColor"
                                 android:layout_below="@id/text7"
                                 android:text="@string/playlist_explanation" />
+
                         </RelativeLayout>
 
                     </android.support.v7.widget.CardView>
@@ -158,9 +159,11 @@
                 android:text="@string/home_page_explanation" />
 
         </LinearLayout>
+
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
         style="@style/SearchButtonStyle"
         app:layout_anchor="@id/song_bar"
         app:layout_anchorGravity="bottom|right|end" />

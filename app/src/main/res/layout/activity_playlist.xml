@@ -65,6 +65,7 @@
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
         style="@style/SearchButtonStyle"
         app:layout_anchor="@id/song_bar"
         app:layout_anchorGravity="bottom|right|end" />

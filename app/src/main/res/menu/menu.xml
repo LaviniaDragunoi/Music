@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
         <item
             android:id="@+id/action_bar_menu"
             android:icon="@drawable/menu"
-            app:showAsAction="ifRoom"
-            android:title="@string/home_name">
+            android:title="@string/home_name"
+            app:showAsAction="ifRoom">
 
-            <menu>
-
+            <menu tools:style="@style/TextDark">
+                <item
+                    android:id="@+id/action_home"
+                    android:title="@string/home_name"
+                    app:showAsAction="ifRoom" />
                 <item
                     android:id="@+id/action_library"
                     android:title="@string/library_name"

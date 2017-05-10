@@ -3,14 +3,14 @@
     android:shape="oval">
     <stroke
         android:width="10dp"
-        android:dashGap="@dimen/margin"
-        android:color="@color/backgroundSoft" />
+        android:color="@color/colorPrimary"
+        android:dashGap="@dimen/margin" />
     <size
         android:width="250dp"
         android:height="250dp"/>
     <gradient
-        android:startColor="@color/backgroundSoft"
         android:centerColor="@color/colorPrimary"
-        android:endColor="@color/colorAccent"
+        android:endColor="@color/backgroundSoft"
+        android:startColor="@color/colorAccent"
         />
 </shape>
